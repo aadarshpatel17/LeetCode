@@ -9,8 +9,6 @@ class Solution {
 
         for(int i=0; i<s.length(); i++) {
             character[s.charAt(i) - 'a']++;
-        }
-        for(int i=0; i<t.length(); i++) {
             character[t.charAt(i) - 'a']--;
         }
         
