@@ -29,12 +29,19 @@ class Solution {
         if (a.length() != b.length()) {
             return false;
         }
-        return sortString(a).equals(sortString(b));
-    }
 
-    public String sortString(String str) {
-        char[] ch = str.toCharArray();
-        Arrays.sort(ch);
-        return new String(ch);
+        char[] chars = new char[26];
+        for (int i = 0; i < a.length(); i++) {
+            chars[a.charAt(i) - 'a']++;
+            chars[b.charAt(i) - 'a']--;
+        }
+
+        for (int i = 0; i < 26; i++) {
+            if (chars[i] != 0) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
