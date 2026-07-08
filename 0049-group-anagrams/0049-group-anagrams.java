@@ -1,47 +1,24 @@
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
-        int len = strs.length;
-
-        List<List<String>> result = new ArrayList<>();
-        boolean[] used = new boolean[len];
-
+        Map<String, List<String>> map = new HashMap<>();
         for (int i = 0; i < strs.length; i++) {
-            if (used[i]) {
-                continue;
+            String key = sortString(strs[i]);
+            if (map.containsKey(key)) {
+                map.get(key).add(strs[i]);
+            } else {
+                List<String> list = new ArrayList<>();
+                list.add(strs[i]);
+                map.put(key, list);
             }
-
-            List<String> anagrams = new ArrayList<>();
-            anagrams.add(strs[i]);
-            used[i] = true;
-            for (int j = i + 1; j < len; j++) {
-                if (!used[j] && isAnagram_optimized(strs[i], strs[j])) {
-                    anagrams.add(strs[j]);
-                    used[j] = true;
-                }
-            }
-            result.add(anagrams);
         }
+        System.out.println(map);
 
-        return result;
+        return new ArrayList<>(map.values());
     }
 
-    public boolean isAnagram_optimized(String a, String b) {
-        if(a.length() != b.length()) {
-            return false;
-        }
-
-        int[] freq = new int[26];
-        for(int i=0; i<a.length(); i++) {
-            freq[a.charAt(i) - 'a']++;
-            freq[b.charAt(i) - 'a']--;
-        }
-
-        for(int i=0; i<26; i++) {
-            if(freq[i] != 0) {
-                return false;
-            }
-        }
-
-        return true;
+    public String sortString(String str) {
+        char[] ch = str.toCharArray();
+        Arrays.sort(ch);
+        return new String(ch);
     }
 }
