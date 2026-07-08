@@ -26,18 +26,18 @@ class Solution {
     }
 
     public boolean isAnagram_optimized(String a, String b) {
-        if (a.length() != b.length()) {
+        if(a.length() != b.length()) {
             return false;
         }
 
-        char[] chars = new char[26];
-        for (int i = 0; i < a.length(); i++) {
-            chars[a.charAt(i) - 'a']++;
-            chars[b.charAt(i) - 'a']--;
+        int[] freq = new int[26];
+        for(int i=0; i<a.length(); i++) {
+            freq[a.charAt(i) - 'a']++;
+            freq[b.charAt(i) - 'a']--;
         }
 
-        for (int i = 0; i < 26; i++) {
-            if (chars[i] != 0) {
+        for(int i=0; i<26; i++) {
+            if(freq[i] != 0) {
                 return false;
             }
         }
