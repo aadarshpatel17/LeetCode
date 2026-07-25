@@ -4,23 +4,21 @@ class Solution {
             return n;
         }
 
-        int max = 0;
-        List<Integer> digits = new ArrayList<>();
+        int l = 0;
+        int sl = 0;
+
         while(n > 0) {
             int ld = n % 10;
-            digits.add(ld);
+            if(ld >= l) {
+                sl = l;
+                l = ld;
+            } 
+            if(ld < l && ld > sl) {
+                sl = ld;
+            }
             n /= 10;
         }
 
-        int prod = 0;
-        for(int i=0; i<digits.size(); i++) {
-            for(int j=0; j<digits.size(); j++) {
-                if(i != j) {
-                    prod = Math.max(prod,digits.get(i) * digits.get(j));
-                }
-            }
-        }
-        max = Math.max(prod, max);
-        return max;
+        return l * sl;
     }
 }
