@@ -34,9 +34,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/aadarshpatel17/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/aadarshpatel17/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/aadarshpatel17/LeetCode/tree/master/0242-valid-anagram) |
+| [3536-maximum-product-of-two-digits](https://github.com/aadarshpatel17/LeetCode/tree/master/3536-maximum-product-of-two-digits) |
 ## String
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/aadarshpatel17/LeetCode/tree/master/0049-group-anagrams) |
 | [0242-valid-anagram](https://github.com/aadarshpatel17/LeetCode/tree/master/0242-valid-anagram) |
+## Math
+|  |
+| ------- |
+| [3536-maximum-product-of-two-digits](https://github.com/aadarshpatel17/LeetCode/tree/master/3536-maximum-product-of-two-digits) |
 <!---LeetCode Topics End-->
