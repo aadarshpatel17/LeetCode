@@ -3,7 +3,7 @@ class Solution {
         return n % digitCal(n) == 0;
     } 
 
-    // digit sum
+    // digit sum + digit Product
     public int digitCal(int n) {
         int sum = 0;
         int product = 1;
@@ -15,6 +15,4 @@ class Solution {
         }
         return sum + product;
     }
-
-    // digit product
 }
