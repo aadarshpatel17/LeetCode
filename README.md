@@ -42,10 +42,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0049-group-anagrams](https://github.com/aadarshpatel17/LeetCode/tree/master/0049-group-anagrams) |
 | [0242-valid-anagram](https://github.com/aadarshpatel17/LeetCode/tree/master/0242-valid-anagram) |
+| [1927-sum-game](https://github.com/aadarshpatel17/LeetCode/tree/master/1927-sum-game) |
 ## Math
 |  |
 | ------- |
 | [0628-maximum-product-of-three-numbers](https://github.com/aadarshpatel17/LeetCode/tree/master/0628-maximum-product-of-three-numbers) |
+| [1927-sum-game](https://github.com/aadarshpatel17/LeetCode/tree/master/1927-sum-game) |
 | [3536-maximum-product-of-two-digits](https://github.com/aadarshpatel17/LeetCode/tree/master/3536-maximum-product-of-two-digits) |
 | [3622-check-divisibility-by-digit-sum-and-product](https://github.com/aadarshpatel17/LeetCode/tree/master/3622-check-divisibility-by-digit-sum-and-product) |
+## Greedy
+|  |
+| ------- |
+| [1927-sum-game](https://github.com/aadarshpatel17/LeetCode/tree/master/1927-sum-game) |
+## Game Theory
+|  |
+| ------- |
+| [1927-sum-game](https://github.com/aadarshpatel17/LeetCode/tree/master/1927-sum-game) |
 <!---LeetCode Topics End-->
