@@ -4,16 +4,16 @@ class Solution {
         int n = nums.length;
 
         Set<Integer> set = new HashSet<>();
-        for(int num: nums) {
+        for (int num : nums) {
             set.add(num);
         }
 
-        int i=1;
-        while(true) {
-            if(!set.contains(k*i)) {
-                return k*i;
-            } 
-            i++;
+        for (int i = 1; i <= n + 1; i++) {
+            int multiple = k * i;
+            if (!set.contains(multiple)) {
+                return multiple;
+            }
         }
+        return 0;
     }
 }
