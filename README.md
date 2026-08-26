@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/aadarshpatel17/LeetCode/tree/master/0049-group-anagrams) |
 | [0242-valid-anagram](https://github.com/aadarshpatel17/LeetCode/tree/master/0242-valid-anagram) |
 | [1927-sum-game](https://github.com/aadarshpatel17/LeetCode/tree/master/1927-sum-game) |
+| [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/aadarshpatel17/LeetCode/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 ## Math
 |  |
 | ------- |
@@ -60,4 +61,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1927-sum-game](https://github.com/aadarshpatel17/LeetCode/tree/master/1927-sum-game) |
+## Sliding Window
+|  |
+| ------- |
+| [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/aadarshpatel17/LeetCode/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 <!---LeetCode Topics End-->
